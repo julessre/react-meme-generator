@@ -4,13 +4,12 @@ This is a web app with React that allows for users to generate and download meme
 
 ## TO DOs
 
-- [ ] Create empty text boxes (on first page load)
-  - [ ] Create a input box on top of the meme
-    - [ ] Associate label element `Top text` with text box
-  - [ ] Create a input box on bottom of meme
-    - [ ] Associate label element `Bottom text` with text box
-- [ ] Create a .scss file for design of the input boxes
-- [ ] Create a .scss file for design of the buttons
+- [x] Create a headline
+- [x] Create empty text boxes (on first page load)
+  - [x] Create a input box on top of the meme
+    - [x] Associate label element `Top text` with text box
+  - [x] Create a input box on bottom of meme
+    - [x] Associate label element `Bottom text` with text box
 - [ ] Create a space to preview the generated meme
   - [ ] The image element needs to have an html attribute set as follows: `data-test-id="meme-image"`
   - [ ] This image element should show a working image when the page first loads
@@ -21,6 +20,8 @@ This is a web app with React that allows for users to generate and download meme
     2. Clear any existing value (eg. with a text box)
     3. Type the text `doge`
     4. Hit enter
+- [ ] Create a .scss file for design of the input boxes
+- [ ] Create a .scss file for design of the buttons
 - [ ] Downloading the image
   - [ ] Search for a download library
   - [ ] Implement download library

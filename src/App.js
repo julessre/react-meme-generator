@@ -1,5 +1,9 @@
-import logo from './logo.svg';
+import GeneratorMask from './GeneratorMask';
 
 export default function App() {
-  return <div></div>;
+  return (
+    <>
+      <GeneratorMask />
+    </>
+  );
 }
