@@ -2,6 +2,8 @@
 
 This is a web app with React that allows for users to generate and download memes using the https://memegen.link/ website.
 
+Using this React Meme Generator the user can enter an individual text for top and bottom and choose the meme background. The meme will be generated automatically and the user has the possibility to download the created image.
+
 ## TO DOs
 
 - [-] Search library for link scrapping
@@ -26,8 +28,8 @@ This is a web app with React that allows for users to generate and download meme
     4. Hit enter
 - [ ] Create a .scss file for design of the input boxes
 - [ ] Create a .scss file for design of the buttons
-- [ ] Downloading the image
-  - [ ] Search for a download library
-  - [ ] Implement download library
+- [x] Downloading the image
+  - [x] Search for a download library
+  - [x] Implement download library
   - [x] Create a button for download
-  - [ ] The button element needs to contain the text `Download`
+  - [x] The button element needs to contain the text `Download`

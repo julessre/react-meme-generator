@@ -1,5 +1,7 @@
-import * as from from 'image-downloader';
-import { useState } from 'react';
+import { saveAs } from 'file-saver';
+import React, { useState } from 'react';
+import styles from './buttonDesign.module.scss';
+import page from './pageDesign.module.scss';
 
 export default function App() {
   const [topText, setTopText] = useState('Hello');
@@ -9,10 +11,10 @@ export default function App() {
   const url = `https://api.memegen.link/images/${createMeme}/${topText}/${bottomText}.png`;
 
   return (
-    <>
+    <div className={page.content}>
       <h1>React Meme Generator</h1>
       <p>Enter your top Text here:</p>
-      <label>
+      <label className={page.inputField}>
         <input
           name="Top text"
           className="topText"
@@ -25,7 +27,7 @@ export default function App() {
       <br />
       <br />
       <p>Enter your bottom Text here:</p>
-      <label>
+      <label className={page.inputField}>
         <input
           name="Bottom text"
           className="bottomText"
@@ -54,9 +56,14 @@ export default function App() {
       <div>
         <img src={url} alt="created Meme" data-test-id="meme-image" />
       </div>
-      <button>Download</button>
-    </>
+      <br />
+      <br />
+      <button
+        onClick={() => saveAs(url, 'my-meme.jpg')}
+        className={styles.button}
+      >
+        Download
+      </button>
+    </div>
   );
 }
-
-// Mit 3x useState (top text, bottom text, meme) kann man dann die URL erstellen
