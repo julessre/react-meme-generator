@@ -40,7 +40,7 @@ export default function App() {
       <br />
       <br />
       <p>Enter your Meme Background here:</p>
-      <label>
+      <label htmlFor="memeBackground">
         <input
           name="meme background"
           className="memeBackground"
