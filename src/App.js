@@ -13,8 +13,10 @@ export default function App() {
   return (
     <div className={page.content}>
       <h1>React Meme Generator</h1>
-      <p>Enter your top Text here:</p>
       <label className={page.inputField}>
+        Top text
+        <br />
+        <br />
         <input
           name="Top text"
           className="topText"
@@ -26,8 +28,10 @@ export default function App() {
       </label>
       <br />
       <br />
-      <p>Enter your bottom Text here:</p>
       <label className={page.inputField}>
+        Bottom text
+        <br />
+        <br />
         <input
           name="Bottom text"
           className="bottomText"
@@ -39,8 +43,10 @@ export default function App() {
       </label>
       <br />
       <br />
-      <p>Enter your Meme Background here:</p>
       <label htmlFor="memeBackground">
+        Meme template
+        <br />
+        <br />
         <input
           name="meme background"
           className="memeBackground"
