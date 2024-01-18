@@ -4,7 +4,7 @@ import styles from './buttonDesign.module.scss';
 import page from './pageDesign.module.scss';
 
 export default function App() {
-  const initialMeme = 'doge';
+  const initialMeme = 'oprah';
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
   const [createMeme, setCreateMeme] = useState(initialMeme);
