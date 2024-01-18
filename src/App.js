@@ -4,14 +4,18 @@ import styles from './buttonDesign.module.scss';
 import page from './pageDesign.module.scss';
 
 export default function App() {
-  const [topText, setTopText] = useState('Hello');
-  const [bottomText, setBottomText] = useState('partypeople');
-  const [createMeme, setCreateMeme] = useState('doge');
+  const initialMeme = 'doge';
+  const [topText, setTopText] = useState('');
+  const [bottomText, setBottomText] = useState('');
+  const [createMeme, setCreateMeme] = useState(initialMeme);
 
   const encodedTopText = encodeURIComponent(topText);
   const encodedBottomText = encodeURIComponent(bottomText);
 
-  const url = `https://api.memegen.link/images/${createMeme}/${encodedTopText}/${encodedBottomText}.png`;
+  const url =
+    `https://api.memegen.link/images/${createMeme}` +
+    `${encodedTopText ? `/${encodedTopText}` : ''}` +
+    `${encodedBottomText ? `/${encodedBottomText}` : ''}.png`;
 
   return (
     <div className={page.content}>
