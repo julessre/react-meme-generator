@@ -43,7 +43,7 @@ export default function App() {
       </label>
       <br />
       <br />
-      <label htmlFor="memeBackground">
+      <label className={page.inputField}>
         Meme template
         <br />
         <br />
