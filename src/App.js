@@ -12,10 +12,9 @@ export default function App() {
   const encodedTopText = encodeURIComponent(topText);
   const encodedBottomText = encodeURIComponent(bottomText);
 
-  const url =
-    `https://api.memegen.link/images/${createMeme}` +
-    `${encodedTopText ? `/${encodedTopText}` : ''}` +
-    `${encodedBottomText ? `/${encodedBottomText}` : ''}.png`;
+  const url = `https://api.memegen.link/images/${createMeme}${
+    encodedTopText ? `/${encodedTopText}` : ''
+  }${encodedBottomText ? `/${encodedBottomText}` : ''}.png`;
 
   return (
     <div className={page.content}>
