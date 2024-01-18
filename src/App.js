@@ -8,7 +8,9 @@ export default function App() {
   const [bottomText, setBottomText] = useState('partypeople');
   const [createMeme, setCreateMeme] = useState('doge');
 
-  const url = `https://api.memegen.link/images/${createMeme}/${topText}/${bottomText}.png`;
+  const url = `https://api.memegen.link/images/${createMeme}/${
+    topText === ' ' ? '%20' : topText
+  }/${bottomText}.png`;
 
   return (
     <div className={page.content}>
